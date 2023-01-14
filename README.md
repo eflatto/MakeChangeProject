@@ -4,7 +4,7 @@
 
 This program aims to provide a simple solution for making change using the least amount of coins possible.
 
-The program prompts the user to enter the price of the item and the amount tendered. Then the program calculates the total amount of change they need and it will return the minimum number of coins needed to make that change.
+The program prompts the user to enter the price of the item and the amount tendered. Then the program calculates the total amount of change they need and it will return the minimum number of coins and bills needed to make that change. This program can only return up to 20 dollar bills.
 
 # Technologies Used
 
