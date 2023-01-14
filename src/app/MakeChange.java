@@ -21,7 +21,8 @@ public class MakeChange {
 		if (amtTendered == itemPrice) {
 			System.out.println("Thank you no change is due. Have a nice day :)");
 		} else if (amtTendered < itemPrice) {
-			System.out.printf("Sorry insufficient funds... you are short by $ %.2f " ,(itemPrice - amtTendered));
+			System.out.printf("Sorry insufficient funds... you are short by $ %.2f " ,
+					(itemPrice - amtTendered));
 		}
 		if (amtTendered > itemPrice) {
 			twenty = (int) (change / 20);
