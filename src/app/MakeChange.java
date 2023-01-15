@@ -27,7 +27,8 @@ public class MakeChange {
 		}
 		// check if the amount tendered is less than the price of the item
 		else if (amtTendered < itemPrice) {
-			System.out.printf("Sorry insufficient funds... you are short by $ %.2f ", (itemPrice - amtTendered));
+			System.out.printf("Sorry insufficient funds... you are short by $ %.2f ", 
+					(itemPrice - amtTendered));
 		}
 		// check if the amount tendered is greater than the price of the item
 		if (amtTendered > itemPrice) {
@@ -42,6 +43,7 @@ public class MakeChange {
 	//also includes all the calculations and takes a double at its parameter
 	public static void printChange(double change) {
 		double totalChange = (change);
+		change = (change +  .0000000000000005)*1; //To fix some rounding errors I was getting
 
 		double twenty = (int) (change / 20);// calculate number of twenties
 		change = change % 20;// calculate the remaining change
@@ -57,6 +59,7 @@ public class MakeChange {
 
 		double quarters = (int) (change / .25);// calculate number of quarters
 		change = change % .25;// calculate the remaining change
+		
 
 		double dimes = (int) (change / .10);// calculate number of dimes
 		change = change % .10;// calculate the remaining change
